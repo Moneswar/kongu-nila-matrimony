@@ -1,0 +1,6 @@
+{
+  "name": "Kongu Nila Matrimony",
+  "description": "Premium Tamil Matrimonial Platform connecting brides, grooms, and families with trust, cultural alignment, smart matching, and horoscope compatibility.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    --font-serif: 'Cinzel', Georgia, serif;
+    --font-tamil: 'Noto Sans Tamil', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7F2;
+    color: #2D2424;
+  }
+
+  .font-serif-brand {
+    font-family: var(--font-serif);
+  }
+
+  .font-tamil {
+    font-family: var(--font-tamil);
+  }
+}
+
+/* Matrimonial Glass & Card Utilities */
+.glass-matrimonial {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.dark .glass-matrimonial {
+  background: rgba(22, 11, 14, 0.92);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  backdrop-filter: blur(12px);
+}
+
+.card-matrimonial {
+  background: #FFFFFF;
+  border: 1px solid #EFE6DA;
+  box-shadow: 0 4px 20px -4px rgba(122, 28, 46, 0.06);
+  border-radius: 1.5rem;
+}
+
+.dark .card-matrimonial {
+  background: #1A0F12;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 4px 20px -4px rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+}
+
+.card-matrimonial-hover {
+  transition: all 0.25s ease-in-out;
+}
+.card-matrimonial-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 10px 25px -5px rgba(122, 28, 46, 0.12);
+}
+.dark .card-matrimonial-hover:hover {
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* Standardized Form Input Utilities */
+.input-matrimonial {
+  background-color: #FAF7F2;
+  border: 1px solid #E5E7EB;
+  color: #1F2937;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+.input-matrimonial:focus {
+  outline: none;
+  border-color: #7A1C2E;
+  box-shadow: 0 0 0 3px rgba(122, 28, 46, 0.12);
+}
+.dark .input-matrimonial {
+  background-color: #140C0E;
+  border: 1px solid #382428;
+  color: #F3E8EE;
+}
+.dark .input-matrimonial:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.select-matrimonial {
+  background-color: #FAF7F2;
+  border: 1px solid #E5E7EB;
+  color: #1F2937;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.875rem;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+.select-matrimonial:focus {
+  outline: none;
+  border-color: #7A1C2E;
+  box-shadow: 0 0 0 3px rgba(122, 28, 46, 0.12);
+}
+.dark .select-matrimonial {
+  background-color: #140C0E;
+  border: 1px solid #382428;
+  color: #F3E8EE;
+}
+.dark .select-matrimonial:focus {
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+/* Reusable Standardized Button Classes */
+.btn-primary {
+  background: linear-gradient(135deg, #7A1C2E 0%, #5C1020 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 2px 8px -2px rgba(122, 28, 46, 0.4);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #8B1E34 0%, #4A0A17 100%);
+  border-color: rgba(212, 175, 55, 0.5);
+  box-shadow: 0 4px 14px -2px rgba(122, 28, 46, 0.6);
+  transform: translateY(-1px);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #F59E0B 0%, #D4AF37 100%);
+  color: #1C1917;
+  font-weight: 700;
+  border-radius: 0.75rem; /* rounded-xl */
+  border: 1px solid rgba(255, 235, 150, 0.6);
+  box-shadow: 0 2px 10px -2px rgba(212, 175, 55, 0.5);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-gold:hover {
+  background: linear-gradient(135deg, #FBBF24 0%, #E5C158 100%);
+  box-shadow: 0 4px 16px -2px rgba(212, 175, 55, 0.7);
+  transform: translateY(-1px);
+}
+.btn-gold:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  color: #374151;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.dark .btn-secondary {
+  background-color: #1A0F12;
+  border: 1px solid #382428;
+  color: #E7E5E4;
+}
+.btn-secondary:hover {
+  background-color: #F9FAFB;
+  border-color: #D1D5DB;
+}
+.dark .btn-secondary:hover {
+  background-color: #241519;
+  border-color: #4D3137;
+}
+
+.btn-outline-gold {
+  background-color: rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: #B45309;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.dark .btn-outline-gold {
+  background-color: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: #FDE68A;
+}
+.btn-outline-gold:hover {
+  background-color: rgba(212, 175, 55, 0.18);
+  border-color: rgba(212, 175, 55, 0.7);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #140C0E;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89122;
+}
+
+/* Kolam subtle motif background */
+.bg-kolam-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#7A1C2E15 0.75px, transparent 0.75px), radial-gradient(#D4AF3720 0.75px, #FAF7F2 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.dark .bg-kolam-pattern {
+  background-color: #140C0E;
+  background-image: radial-gradient(#D4AF3715 0.75px, transparent 0.75px), radial-gradient(#7A1C2E25 0.75px, #140C0E 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+.maroon-gradient {
+  background: linear-gradient(135deg, #7A1C2E 0%, #540D1C 100%);
+}
+
+.wine-gradient {
+  background: linear-gradient(135deg, #8B1E34 0%, #58111A 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #AA8010 100%);
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
